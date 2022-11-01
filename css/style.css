@@ -3025,8 +3025,9 @@ ol {
   margin-bottom: 15px;
 }
 
-.footer__about__logo a {
-  display: inline-block;
+.footer__about__logo a img{
+ width: 100%;
+ max-width: 120px;
 }
 
 .footer__widget {
@@ -3038,11 +3039,6 @@ ol {
   color: var(--white);
   font-weight: 700;
   margin-bottom: 10px;
-}
-
-.footer__widget ul {
-  width: 50%;
-  float: left;
 }
 
 .footer__widget ul li {
