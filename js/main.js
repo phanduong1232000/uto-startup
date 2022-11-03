@@ -132,7 +132,24 @@
         autoHeight: false,
         autoplay: false,
         touchDrag: false,
-        mouseDrag: false
+        mouseDrag: false,
+        responsive: {
+            320: {
+                items: 4,
+            },
+
+            480: {
+                items: 5,
+            },
+
+            768: {
+                items: 7,
+            },
+
+            992: {
+                items: 9,
+            }
+        }
     });
 
     /*-----------------------

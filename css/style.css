@@ -437,7 +437,7 @@ ol {
 .header__menu ul li {
   list-style: none;
   display: inline-block;
-  margin-right: 70px;
+  margin-right: 40px;
   position: relative;
 }
 
@@ -2050,7 +2050,13 @@ ol {
   font-size: 30px;
   color: #dd2222;
   font-weight: 600;
-  margin-bottom: 15px;
+}
+.product__details__text .product__details__price__sale{
+  margin-right: 20px;
+  margin-bottom: 0px;
+  text-decoration: line-through;
+  color: black;
+  font-weight: 700;
 }
 
 .product__details__text p {
@@ -3620,12 +3626,12 @@ ol {
   .humberger__open {
     display: block;
     font-size: 22px;
-    color: var(--black);
+    color: var(--white);
     height: 35px;
     width: 35px;
     line-height: 33px;
     text-align: center;
-    border: 1px solid var(--black);
+    border: 1px solid var(--white);
     cursor: pointer;
     position: absolute;
     right: 15px;
@@ -3645,7 +3651,6 @@ ol {
     overflow-y: auto;
     z-index: 99;
     padding: 30px;
-    padding-top: 50px;
     opacity: 0;
     display: block;
     -webkit-transition: all, 0.6s;
@@ -3660,6 +3665,7 @@ ol {
   }
   .humberger__menu__logo {
     margin-bottom: 30px;
+    width: 120px;
   }
   .humberger__menu__logo a {
     display: inline-block;
@@ -3700,9 +3706,9 @@ ol {
   .humberger__menu__cart ul li a span {
     height: 13px;
     width: 13px;
-    background: var(--orange);
+    background: #fe7f02;
     font-size: 10px;
-    color: #ffffff;
+    color: var(--white);
     line-height: 13px;
     text-align: center;
     font-weight: 700;
@@ -3714,7 +3720,7 @@ ol {
   }
   .humberger__menu__cart .header__cart__price {
     font-size: 14px;
-    color: #6f6f6f;
+    color: var(--orange);
     display: inline-block;
   }
   .humberger__menu__cart .header__cart__price span {
@@ -3971,17 +3977,41 @@ ol {
 
 /* login ========================== */
 .login {
-  background: url(../img/banner-login.png);
+  background: url(../img/utostartup/br2.jpg);
   background-size: cover;
   height: 100%;
-  background-position: center bottom;
-  padding: 70px 70px;
+  background-position: top bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__login {
+  background: url(../img/utostartup/br1.jpg);
+  padding: 50px 100px;
+  background-size: cover;
+  background-position: top bottom;
+}
+.header__login .signup__register{
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: underline;
+  padding-top: 20px;
+  display: block;
+}
+.header__login h2 {
+  color: var(--white);
+  font-weight: bold;
+}
+.header__login img {
+  width: 100%;
+  max-width: 140px;
+  display: block;
 }
 .form__login {
   background-color: white;
   text-align: center;
   padding: 50px 0px;
-  border-radius: 20px;
 }
 .form__login input {
   width: 50%;
@@ -3990,10 +4020,16 @@ ol {
   color: #6f6f6f;
   padding-left: 20px;
   margin-bottom: 30px;
-  border: 1px solid #ebebeb;
   border-radius: 4px;
   border-radius: 20px;
   box-shadow: 3px 3px 2px 1px #d5d5d587;
+}
+.form__login .check{
+  width: auto;
+  height: auto;
+  box-shadow: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .form__login .signup__login {
@@ -4002,15 +4038,22 @@ ol {
 .form__login .signup__login:hover {
   color: var(--black);
 }
-
+@media(min-width:1400px){
+  .width-login{
+    width: 50%;
+    margin: auto;
+  }
+}
 /* register ====================== */
 
 .register {
-  background: url(../img/banner-login.png);
+  background: url(../img/utostartup/br2.jpg);
   background-size: cover;
   height: 100%;
-  background-position: center bottom;
-  padding: 70px 70px;
+  background-position: top bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .form__register {
   background-color: white;
@@ -4238,9 +4281,20 @@ ol {
   background-color: #f5f5f5;
   border: 1px solid #dddddd;
   text-align: center;
-  width: 180px;
+  width: 15%;
   margin: 2px;
+  transition: .5s;
 }
+.box-category .category__menu:hover{
+  background-color: var(--black);
+}
+.box-category .category__menu:hover img{
+  filter: invert(1);
+}
+.box-category .category__menu:hover h4{
+  color: var(--white);
+}
+
 .box-category .category__menu img{
   width: 100%;
   max-width: 40px;
@@ -4309,4 +4363,84 @@ ol {
   height: 100%;
   max-height: 500px;
   object-fit: contain;
+}
+.box-icon-four{
+  background-color: #f5f5f5;
+  padding: 10px 30px 10px 30px;
+  border-radius: 10px;
+}
+.box-icon-four .d-flex{
+  padding: 25px 0px;
+  border-bottom: 1px solid #d5d5d5;
+}
+.box-icon-four .d-flex:last-child{
+  border-bottom: none;
+}
+.box-icon-four h4{
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  color: var(--black);
+}
+.best-selling .col-xs-6.col-6{
+  padding: 4px;
+}
+.best-selling .col-xs-6.col-6 .featured__item{
+  margin-bottom: 4px;
+}
+@media(max-width:600px){
+  .header__cart{
+    display: none;
+  }
+  .hero__categories{
+    display: none;
+  }
+  .hero__item,
+  .hero2__item,
+  .hero3__item{
+    height: 100%;
+  }
+  .box-category{
+    flex-wrap: wrap;
+  }
+  .box-category .category__menu{
+    width: 80px;
+  }
+  .box-category .category__menu img{
+    width: 20px;
+  }
+  .box-category .category__menu h4{
+    font-size: 9px;
+  }
+  .hide-mb{
+    display: none;
+  }
+  .featured__controls{
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .featured__controls ul {
+    display: none;
+  }
+  .mt--100{
+    margin-top: -40px;
+  }
+  .custom-count{
+   margin-top: 10px;
+  }
+  .custom-count ul{
+    display: flex;
+  }
+  .custom-count ul li{
+    width: 70px;
+    border-bottom: none;
+  }
+  .product__details__text h3 {
+    margin-top: 10px;
+  }
+  .mb--50{
+    padding-bottom: 0px;
+  }
 }
