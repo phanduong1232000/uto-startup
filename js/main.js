@@ -72,6 +72,7 @@
         smartSpeed: 1200,
         autoHeight: false,
         autoplay: true,
+        animateOut: 'fadeOut'
     });
 
     /*-----------------------
@@ -87,6 +88,7 @@
         smartSpeed: 1200,
         autoHeight: false,
         autoplay: true,
+        animateOut: 'fadeOut'
     });
     /*-----------------------
         banner3 header Slider
@@ -101,6 +103,7 @@
         smartSpeed: 1200,
         autoHeight: false,
         autoplay: true,
+        animateOut: 'fadeOut'
     });
 
     /*-----------------------
@@ -294,17 +297,18 @@
         minPrice = rangeSlider.data('min'),
         maxPrice = rangeSlider.data('max');
     rangeSlider.slider({
+
         range: true,
         min: minPrice,
         max: maxPrice,
         values: [minPrice, maxPrice],
         slide: function (event, ui) {
-            minamount.val('$' + ui.values[0]);
-            maxamount.val('$' + ui.values[1]);
+            minamount.val(ui.values[0] + '.000VNĐ' );
+            maxamount.val(ui.values[1] + '.000VNĐ');
         }
     });
-    minamount.val('$' + rangeSlider.slider("values", 0));
-    maxamount.val('$' + rangeSlider.slider("values", 1));
+    minamount.val(rangeSlider.slider("values", 0) + '.000VNĐ' );
+    maxamount.val(rangeSlider.slider("values", 1) + '.000VNĐ' );
     /*--------------------------
         Select
     ----------------------------*/
