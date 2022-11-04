@@ -204,7 +204,6 @@
         autoHeight: false,
         autoplay: false,
         responsive: {
-
             0: {
                 items: 1,
             },
