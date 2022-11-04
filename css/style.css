@@ -2010,8 +2010,8 @@ ol {
 
 .product__pagination a:hover,
 .blog__pagination a:hover {
-  background: var(--orange);
-  border-color: var(--orange);
+  background: var(--black);
+  border-color: var(--black);
   color: #ffffff;
 }
 
@@ -2690,7 +2690,10 @@ ol {
 -----------------------*/
 
 .blog__item {
-  margin-bottom: 60px;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  min-height: 550px;
 }
 
 .blog__item__pic img {
@@ -2740,9 +2743,14 @@ ol {
   color: #1c1c1c;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 1px solid #b2b2b2;
+  border: 1px solid var(--black);
   padding: 14px 20px 12px;
   border-radius: 25px;
+  transition: .3s;
+}
+.blog__item__text .blog__btn:hover{
+  background-color: var(--black);
+  color: white;
 }
 
 .blog__item__text .blog__btn span {
@@ -2801,7 +2809,7 @@ ol {
 }
 
 .blog__sidebar__item ul li a:hover {
-  color: var(--orange);
+  color: var(--black);
 }
 
 .blog__sidebar__search {
@@ -4410,6 +4418,9 @@ ol {
 }
 .best-selling .col-xs-6.col-6{
   padding: 4px;
+}
+.blog-padding .col-lg-4{
+  padding: 10px;
 }
 .best-selling .col-xs-6.col-6 .featured__item{
   margin-bottom: 4px;
