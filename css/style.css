@@ -4436,6 +4436,7 @@ ol {
   }
   .box-category .category__menu img{
     width: 20px;
+    height: 20px;
   }
   .box-category .category__menu h4{
     font-size: 9px;
@@ -4468,5 +4469,9 @@ ol {
   }
   .mb--50{
     padding-bottom: 0px;
+  }
+  .uto-review .title{
+    font-size: 20px;
+    text-align: center;
   }
 }
