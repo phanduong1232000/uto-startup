@@ -118,7 +118,7 @@
         navText: ["<span class='fa fa-angle-left'><span/>", "<span class='fa fa-angle-right'><span/>"],
         smartSpeed: 1200,
         autoHeight: false,
-        autoplay: true,
+        autoplay: false,
     });
 
     /*-----------------------
